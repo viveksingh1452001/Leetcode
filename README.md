@@ -41,7 +41,7 @@ Follow-up: Can you come up with an algorithm that is less than O(n2) time comple
 
 <h3> Q2.<a href='https://github.com/viveksingh1452001/Leetcode/blob/de1b17e092c9e77a35cd3cc68ed77a7ba93b8f6e/2.%20Remove%20Duplicates%20from%20Sorted%20Array'>Remove Duplicates from Sorted Array </a></h3>
 
-<h5><i>
+<h5>
 HINT: </br>
 Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same. Then return the number of unique elements in nums.
 
@@ -84,7 +84,7 @@ Constraints:
 -100 <= nums[i] <= 100
 nums is sorted in non-decreasing order.
 
-</i></h5>
+</h5>
 
 
 
