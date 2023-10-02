@@ -1,5 +1,5 @@
 # Leetcode
-<h3> Q1.<a href='https://github.com/viveksingh1452001/Leetcode/blob/main/1.%20Two%20Sum'>Two Sum </a></h3>
+<h3> Q1.<a href='https://github.com/viveksingh1452001/Leetcode/blob/96c1aace88e0f1283c06fad83d6407aa2e40381f/Remove%20Duplicates%20from%20Sorted%20Array'>Two Sum </a></h3>
 
 <h5>
 HINT: </br>
