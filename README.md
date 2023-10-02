@@ -1,7 +1,7 @@
 # Leetcode
 <h3> Q1.<a href='https://github.com/viveksingh1452001/Leetcode/blob/main/1.%20Two%20Sum'>Two Sum </a></h3>
 
-<h5><i>
+<h5>
 HINT: </br>
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
@@ -35,4 +35,4 @@ Only one valid answer exists.
  
 
 Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
-</i></h5>
+</h5>
