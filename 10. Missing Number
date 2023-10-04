@@ -1,0 +1,15 @@
+class Solution {
+public:
+    int missingNumber(vector<int>& nums) {
+        //int n=nums.size();
+       
+        int a=0;
+    
+        for(int i=1; i<=nums.size();i++){
+            if(find(nums.begin(),nums.end(),i)==nums.end()){
+               a=i;
+            }
+        }
+        return a;
+    }
+};
