@@ -1,0 +1,33 @@
+class Solution {
+public:
+    vector<string> findWords(vector<string>& words) {
+        vector<string>v;
+        map<char,int> mp{
+            {'q',1},{'w',1},{'e',1},{'r',1},
+            {'t',1},{'y',1},{'u',1},{'i',1},
+            {'o',1},{'p',1},{'a',2},{'s',2},
+            {'d',2},{'f',2},{'g',2},{'h',2},
+            {'j',2},{'k',2},{'l',2},{'m',3},
+            {'z',3},{'x',3},{'c',3},{'v',3},
+            {'b',3},{'n',3}
+        };
+        for(auto str:words){
+            if(!words.empty()){
+                int flag=true;
+                int rownum= mp[tolower(str[0])];
+                int m=str.length();
+                for(int i=0; i<m; i++){
+                    if(mp[tolower(str[i])]!=rownum){
+                        flag=false;
+                        break;
+                    }
+                    
+                }
+                if(flag){
+                      v.push_back(str);
+                    }
+            }
+        }
+        return v;
+    }
+};
