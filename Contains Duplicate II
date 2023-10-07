@@ -1,0 +1,17 @@
+class Solution {
+public:
+    bool containsNearbyDuplicate(vector<int>& nums, int k) {
+        unordered_map<int,int>mp;  
+        for(int i=0; i<nums.size();i++){
+            auto it=mp.find(nums[i]);       // find the element in the map  if not present then store nums[i] in the map
+            if(it!=mp.end()){                     // check if element is present in the map or not
+                if(abs(i-it->second)<=k){   // check if i-j <=k is true then return true
+                    return true;
+                }
+            }
+            mp[nums[i]]=i;                      //  nums[i] is the key and i is the value
+        }
+
+        return false;                              // if the loop is ended and not return value then return false
+    }
+};
