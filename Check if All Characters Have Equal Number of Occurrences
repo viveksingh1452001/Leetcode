@@ -1,0 +1,19 @@
+class Solution {
+public:
+    bool areOccurrencesEqual(string s) {
+        map<char,int>mp;
+        
+        for(auto str:s){
+            mp[str]++;
+        }
+        auto it = mp.begin();
+        int temp=it->second;
+        for(int i=0; i<mp.size();i++){
+            if(temp!=it->second){
+            return false;
+            }
+            it++;
+        }
+        return true;
+    }
+};
