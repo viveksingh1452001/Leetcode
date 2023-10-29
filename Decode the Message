@@ -1,0 +1,24 @@
+class Solution {
+public:
+    string decodeMessage(string key, string message) {
+        string res="";
+        unordered_map<char,char>mp;
+        int count=0;
+        for(auto i:key){
+           if(i!=' ' && mp.find(i)==mp.end()){
+               mp[i]=count+97;
+               count++;
+           }
+        }
+        for(auto i:message){
+            auto it =mp.find(i);
+            if(it!=mp.end()){
+                res+=it->second;
+            }
+            else if(i==' '){
+                res+=' ';
+            }
+        }
+      return res;
+    }
+};
