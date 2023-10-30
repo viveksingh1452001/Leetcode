@@ -1,0 +1,14 @@
+class Solution {
+public:
+    int minimumSum(int num) {
+        vector<int>vec;
+        while(num>0){
+            int rem = num%10;
+            vec.push_back(rem);
+            num/=10;
+        }
+        sort(vec.begin(),vec.end());
+        int res = (vec[0]*10+vec[2])+(vec[1]*10+vec[3]);
+        return res;
+    }
+};
