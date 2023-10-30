@@ -1,0 +1,26 @@
+class Solution {
+public:
+    string sortSentence(string s) {
+        map<int,string>m;
+        string temp="";
+        for(int i=0; i<s.size(); i++){
+            if(isdigit(s[i])){
+              m[s[i]]=temp;
+              temp="";
+            }
+            else if(!isdigit(s[i]) && s[i]!=' '){
+                temp+=s[i];
+            }
+        }
+        auto it = m.begin();
+        string str;
+        str+=it->second;
+        it++;
+        for(it;it!=m.end();it++){
+            str+=' ';
+            str+=it->second;
+            
+        }
+        return str;
+    }
+};
